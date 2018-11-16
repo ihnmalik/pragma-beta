@@ -7,6 +7,7 @@ import Image from '../components/image'
 const IndexPage = () => (
   <Layout>
     <div className="jumbotron">Content</div>
+    <h2>Pragma App</h2>
     <h1>Hi people</h1>
     <p>Welcome to your Pragma</p>
     <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
