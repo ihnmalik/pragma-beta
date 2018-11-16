@@ -17,7 +17,7 @@ const Header = () => (
                   <h1 className="content-headings">Your Technical<br /> Co-Founder</h1>
                   <p className="headings-details">We help non-technical founders get started on their product.</p>
             </div>
-            <div className="col-sm-6 align-items-right" >
+            <div className="col-sm-6 align-items-right"  style={{alignContent: "center", textAlign: "center"}}>
                 <HeaderImg />
             </div>
       </div>

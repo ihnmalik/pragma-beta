@@ -14,9 +14,20 @@
     font-size: 70px;
 }
 
+.content-sub-headings {
+    font-family: FuturaLight;
+    font-weight: bold;
+    font-size: 25px;
+}
+
 .headings-details {
     font-family: FuturaLight;
     font-size: 30px;
+}
+
+.headings-sub-details {
+    font-family: FuturaLight;
+    font-size: 18px;
 }
 
 .siteTitle {
@@ -36,9 +47,20 @@
         font-weight: bold;
         font-size: 50px;
     }
+
+    .content-sub-headings {
+        font-family: FuturaLight;
+        font-weight: bold;
+        font-size: 20px;
+    }
     
     .headings-details {
         font-family: FuturaLight;
         font-size: 25px;
+    }
+
+    .headings-sub-details {
+        font-family: FuturaLight;
+        font-size: 12px;
     }
 }

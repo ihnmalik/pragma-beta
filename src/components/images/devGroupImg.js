@@ -13,11 +13,11 @@ import Img from 'gatsby-image'
  * - `StaticQuery`: https://gatsby.app/staticquery
  */
 
-const HeaderImg = () => (
+const PragmaDevGroupImg = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "header.png" }) {
+        placeholderImage: file(relativePath: { eq: "pragma-group.png" }) {
           childImageSharp {
             fixed(width: 450, height: 450) {
               ...GatsbyImageSharpFixed
@@ -30,4 +30,4 @@ const HeaderImg = () => (
   />
 )
 
-export default HeaderImg
+export default PragmaDevGroupImg

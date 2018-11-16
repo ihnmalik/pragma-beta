@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Layout from '../components/layout'
 import Image from '../components/image'
 import Header from "../components/header"
+import DevGroup from "../components/dev-group/dev-group"
 
 import "../css/main.css"
 
@@ -14,7 +15,7 @@ const IndexPage = () => (
   // </div>
   <Layout>
     <Header />
-   
+    <DevGroup />
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
