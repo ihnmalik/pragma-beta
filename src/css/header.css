@@ -1,0 +1,44 @@
+@font-face {
+    font-family: FuturaBold;
+    src: url("fonts/futura/futura_bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: FuturaLight;
+    src:  url("fonts/futura/futura_light.otf") format("opentype");
+}
+
+.content-headings {
+    font-family: FuturaBold;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.headings-details {
+    font-family: FuturaLight;
+    font-size: 30px;
+}
+
+.siteTitle {
+    font-family: FuturaBold;
+    font-weight: bold; 
+    color: black;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+        
+    .content-headings {
+        font-family: FuturaBold;
+        font-weight: bold;
+        font-size: 50px;
+    }
+    
+    .headings-details {
+        font-family: FuturaLight;
+        font-size: 25px;
+    }
+}
