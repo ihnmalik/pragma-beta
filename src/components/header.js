@@ -5,7 +5,7 @@ import HeaderImg from "./images/headerImg"
 import "../css/header.css"
 
 const Header = () => (
-  <div className="container-fluid" style={{paddingTop: "30px", paddingRight: "30px", paddingLeft: "30px"}}>
+  <div className="container-fluid" style={{paddingTop: "40px", paddingRight: "30px", paddingLeft: "30px"}}>
       <div 
           className="row align-items-center" 
           style={{ 
@@ -16,6 +16,7 @@ const Header = () => (
             <div className="col-sm-6" style={{paddingLeft: "84px"}} >
                   <h1 className="content-headings">Your Technical<br /> Co-Founder</h1>
                   <p className="headings-details">We help non-technical founders get started on their product.</p>
+                  <button className="ApplyBtnHeader">Apply Now</button>
             </div>
             <div className="col-sm-6 align-items-right"  style={{alignContent: "center", textAlign: "center"}}>
                 <HeaderImg />

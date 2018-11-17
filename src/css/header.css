@@ -36,6 +36,28 @@
     color: black;
 }
 
+.ApplyBtnHeader {
+    font-family: FuturaLight;
+    font-size: 25px;
+    margin-right: 35px;
+    margin-top: 5px;
+    padding: 10px 40px;
+    cursor: pointer;
+    background: none;
+    border: 2px solid #f76268;
+    border-radius: 40px;
+    transition: all 0.4s ease 
+}
+
+.ApplyBtnHeader:hover, .ApplyBtnHeader:active {
+    box-shadow:
+    1px 1px #53a7ea,
+    2px 2px #53a7ea,
+    3px 3px #53a7ea;
+    background: #f76268;
+    color: white;
+    transform: translateX(-3px);
+}
 
 
 
@@ -45,7 +67,7 @@
     .content-headings {
         font-family: FuturaBold;
         font-weight: bold;
-        font-size: 50px;
+        font-size: 45px;
     }
 
     .content-sub-headings {

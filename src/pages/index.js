@@ -13,10 +13,6 @@ import Footer from "../components/Footer/footer"
 import "../css/main.css"
 
 const IndexPage = () => (
-  // <div>
-  //   <Layout />
-  //   <Header />
-  // </div>
   <Layout>
     <Header />
     <DevGroup />
@@ -26,7 +22,6 @@ const IndexPage = () => (
     <ByJoiningUS />
     <BuildingSoftware />
     <StopFunding />
-    <Link to="/page-2/">Go to page 2</Link>
     <Footer />
   </Layout>
 )
