@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import PragmaBuilding from "../images/buildingSoftware"
+import PragmaBuilding from "../../images/buildingSoftware"
 
 
 const BuildingSoftware = () => (

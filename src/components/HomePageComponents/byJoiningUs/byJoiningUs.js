@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import PragmaDeveloper from "../images/pragmaDeveloper"
+import PragmaDeveloper from "../../images/pragmaDeveloper"
 
 
 const ByJoiningUS = () => (

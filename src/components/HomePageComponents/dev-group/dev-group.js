@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import PragmaNetwork from "../images/pragma-network"
+import PragmaNetwork from "../../images/pragma-network"
 
 const DevGroup = () => (
   <div className="container-fluid" style={{padding: "0px 30px"}}>

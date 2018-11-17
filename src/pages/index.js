@@ -4,10 +4,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Layout from '../components/layout'
 import Image from '../components/image'
 import Header from "../components/header"
-import DevGroup from "../components/dev-group/dev-group"
-import ByJoiningUS from "../components/byJoiningUs/byJoiningUs"
-import BuildingSoftware from "../components/buildingSoftware/BuildingSoftware"
-import StopFunding from "../components/stopFunding/stopFunding"
+import DevGroup from "../components/HomePageComponents/dev-group/dev-group"
+import ByJoiningUS from "../components/HomePageComponents/byJoiningUs/byJoiningUs"
+import BuildingSoftware from "../components/HomePageComponents/buildingSoftware/BuildingSoftware"
+import StopFunding from "../components/HomePageComponents/stopFunding/stopFunding"
 import Footer from "../components/Footer/footer"
 
 import "../css/main.css"

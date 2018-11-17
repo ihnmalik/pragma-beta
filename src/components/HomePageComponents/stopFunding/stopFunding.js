@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import PragmaDevGroupImg from "../images/devGroupImg"
+import PragmaDevGroupImg from "../../images/devGroupImg"
 
 
 const StopFunding = () => (
