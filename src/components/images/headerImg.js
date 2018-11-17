@@ -19,14 +19,14 @@ const HeaderImg = () => (
       query {
         placeholderImage: file(relativePath: { eq: "header.png" }) {
           childImageSharp {
-            fixed(width: 450, height: 450) {
-              ...GatsbyImageSharpFixed
+            fluid(maxWidth: 400, maxHeight: 400) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
       }
     `}
-    render={data => <Img fixed={data.placeholderImage.childImageSharp.fixed} />}
+    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
   />
 )
 

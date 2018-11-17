@@ -13,11 +13,11 @@ import Img from 'gatsby-image'
  * - `StaticQuery`: https://gatsby.app/staticquery
  */
 
-const PragmaDevGroupImg = () => (
+const PragmaDeveloper = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "pragma-group.png" }) {
+        placeholderImage: file(relativePath: { eq: "pragma-developer.png" }) {
           childImageSharp {
             fluid(maxWidth: 400, maxHeight: 400) {
               ...GatsbyImageSharpFluid
@@ -30,4 +30,4 @@ const PragmaDevGroupImg = () => (
   />
 )
 
-export default PragmaDevGroupImg
+export default PragmaDeveloper

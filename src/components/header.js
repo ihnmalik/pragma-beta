@@ -5,7 +5,7 @@ import HeaderImg from "./images/headerImg"
 import "../css/header.css"
 
 const Header = () => (
-  <div className="container-fluid" style={{padding: "30px"}}>
+  <div className="container-fluid" style={{paddingTop: "30px", paddingRight: "30px", paddingLeft: "30px"}}>
       <div 
           className="row align-items-center" 
           style={{ 

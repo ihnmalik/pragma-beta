@@ -1,17 +1,18 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import PragmaDevGroupImg from "../images/devGroupImg"
+
+import PragmaNetwork from "../images/pragma-network"
 
 const DevGroup = () => (
-  <div className="container-fluid" style={{padding: "30px"}}>
+  <div className="container-fluid" style={{padding: "0px 30px"}}>
       <div 
           className="row align-items-center" 
           style={{ 
-            backgroundColor: "white", 
+            backgroundColor: "#FBFAF7", 
             height: "700px", 
           }}>
             <div className="col-sm-6 " style={{alignContent: "center", textAlign: "center"}} >
-                <PragmaDevGroupImg />
+                <PragmaNetwork />
             </div>
 
             <div className="col-sm-6" style={{textAlign: "justify"}} >
