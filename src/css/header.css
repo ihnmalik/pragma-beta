@@ -19,6 +19,13 @@
     font-size: 70px;
 }
 
+.content-headings-2 {
+    
+    font-family: FuturaBold;
+    font-weight: bold;
+    font-size: 30px;
+}
+
 .content-sub-headings {
     font-family: FuturaLight;
     font-weight: bold;

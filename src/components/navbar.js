@@ -82,7 +82,6 @@ class Navbar extends React.Component {
             <Link className="list" to="/whyApply/">Why Apply</Link>
             <Link className="list" to="/blogPage/">Blog</Link>
             <Link className="list" to="/aboutUs/">About Us</Link>
-            <Link className="list" to="/contactUsPage/">Contact Us</Link>
           </div>
 
           <span
