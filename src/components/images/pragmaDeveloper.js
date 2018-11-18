@@ -19,7 +19,7 @@ const PragmaDeveloper = () => (
       query {
         placeholderImage: file(relativePath: { eq: "pragma-developer.png" }) {
           childImageSharp {
-            fluid(maxWidth: 400, maxHeight: 400) {
+            fluid(maxWidth: 300, maxHeight: 300) {
               ...GatsbyImageSharpFluid
             }
           }

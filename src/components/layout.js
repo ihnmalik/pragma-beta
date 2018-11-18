@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-
+import Footer from "./Footer/footer"
 // import Header from './header'
 import Navbar from "./navbar"
 // import './layout.css'
@@ -31,6 +31,11 @@ const Layout = ({ children }) => (
         </Helmet>
           <Navbar siteTitle={data.site.siteMetadata.title} />
         <div
+        style={{
+          margin: '0 auto',
+          padding: '0px 1.0875rem 1.45rem',
+          paddingTop: "120px",
+        }}
           // style={{
           //   margin: '0 auto',
           //   maxWidth: 960,
@@ -40,6 +45,7 @@ const Layout = ({ children }) => (
         >
           {children}
         </div>
+        <Footer />
       </>
     )}
   />

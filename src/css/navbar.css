@@ -54,7 +54,6 @@
     position: absolute;
     top: 0px;
     right: 25px;
-    /* right: 210px; */
     font-size: 36px;
     margin-left: 50px;
 }
@@ -93,6 +92,26 @@
     color: white;
     transform: scale(0.96)
 }
+
+
+
+@media only screen and (max-width: 600px) {
+        
+    .ApplyBtnNavbar {
+        font-family: FuturaLight;
+        font-size: 12px;
+        float: right;
+        margin-right: 15px;
+        margin-top: 5px;
+        padding: 07px 20px;
+        cursor: pointer;
+        background: none;
+        border: 1px solid #f76268;
+        border-radius: 40px;
+        transition: all 0.4s ease 
+    }
+}
+
 
 /* 
 .ApplyBtnNavbar:hover {

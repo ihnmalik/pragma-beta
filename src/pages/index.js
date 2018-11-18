@@ -9,20 +9,23 @@ import ByJoiningUS from "../components/HomePageComponents/byJoiningUs/byJoiningU
 import BuildingSoftware from "../components/HomePageComponents/buildingSoftware/BuildingSoftware"
 import StopFunding from "../components/HomePageComponents/stopFunding/stopFunding"
 import Footer from "../components/Footer/footer"
+import HeaderMain from "../components/HomePageComponents/header/header-main"
 
 import "../css/main.css"
+import "../css/header.css"
 
 const IndexPage = () => (
-  <Layout>
-    <Header />
-    <DevGroup />
-    <div style={{textAlign: "center", padding: "20px"}}>
-        <h1 className="content-headings">By Joining Us</h1>
-    </div>
-    <ByJoiningUS />
-    <BuildingSoftware />
-    <StopFunding />
-    <Footer />
+  <Layout >
+      <HeaderMain />
+      {/* <Header /> */}
+      <DevGroup />
+      <div style={{textAlign: "center", padding: "20px"}}>
+          <p className="join-us-text">By Joining Us</p>
+      </div>
+      <ByJoiningUS />
+      <BuildingSoftware />
+      <StopFunding />
+      {/* <Footer /> */}
   </Layout>
 )
 

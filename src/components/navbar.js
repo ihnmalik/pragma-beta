@@ -38,6 +38,7 @@ class Navbar extends React.Component {
           width: "100%",
           zIndex: 1000,
           height: "110px",
+          zIndex: "150000"
         }}
       >
         <div
