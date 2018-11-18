@@ -73,12 +73,12 @@
 }
 
 .img-class {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 500px;
+    max-height: 500px;
     padding: 0px 30px 30px 30px;
     position: relative; 
     top: 20%;
-    left: 20%
+    left: 5%
 }
 
 .team-img {
