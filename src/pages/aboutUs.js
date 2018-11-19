@@ -8,7 +8,8 @@ import AboutUsSlider from "../components/aboutUsSlider"
 const AboutUsPage = () => (
   <Layout>
     <div className="Page-Contents container-fluid">
-        <div className="container about-page-container-div" >
+
+        <div className="container "  style={{textAlign: "center",backgroundColor: "#f9f7f2",padding: "70px", alignContent: "center"}}>
             <h1 className="content-headings-2">
               We’re Hiring!
             </h1>

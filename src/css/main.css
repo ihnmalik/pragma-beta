@@ -4,15 +4,6 @@
 } */
 
 
-/* style={{textAlign: "center",backgroundColor: "#f9f7f2",padding: "70px", alignContent: "center"}} */
-
-.about-page-container-div {
-    text-align: center;
-    background-color: #f9f7f2;
-    padding: "60px";
-    align-content: center
-}
-
 .link {
     text-decoration: none;
 }
