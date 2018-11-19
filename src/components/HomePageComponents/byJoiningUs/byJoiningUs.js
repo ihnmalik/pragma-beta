@@ -1,48 +1,37 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import PragmaDeveloper from "../../images/pragmaDeveloper"
+import {connect} from "react-redux"
 
+import EnglishLanguage from "../../../site content text/english"
+import ArabicLanguage from "../../../site content text/arabic"
 
-const ByJoiningUS = () => (
+const ByJoiningUS = (props) => (
   <div className="container-fluid">
+        <div style={{textAlign: "center", padding: "20px"}}>
+            <p className="join-us-text">By Joining Us</p>
+        </div>
     <div className="row main-header-div" >
       <div className="col-sm-6 container" style={{ display: "flex", padding: "40px", alignContent: "center", justifyContent: "center", flexDirection: "column" }}>
-        <h1 className="content-sub-headings">You don't get a developer</h1>
+        <h1 className="content-sub-headings"> {props.language.main3.subTitle}</h1>
         <p className="headings-sub-details">
-          Once on the Batch, you get access to one of our in-house tech teams.
-          That’s a Project Manager (who's also a Scrum Master), a UI/UX Designer,
-          a Lead Developer (Mobile or Web - according to your product),
-          an Architect overseeing the project, and a back-end developer.
+         {props.language.main3.description}
         </p>
       </div>
       <div className="col-sm-6 container">
         <div className="img-class" ><PragmaDeveloper /></div>
       </div>
     </div>
+      <div style={{textAlign: "center", padding: "20px"}}>
+            <p className="join-us-text">Our Team</p>
+        </div>
   </div>
 )
 
-export default ByJoiningUS
+const mapStateToProps = (state) => {
+  return {
+      language: state.language === 'English' ? EnglishLanguage : ArabicLanguage
+  }
+}
 
-
-// <div className="container-fluid" style={{padding: "0px 30px"}}>
-//       <div 
-//           className="row align-items-center" 
-//           style={{ 
-//             backgroundColor: "#f9f7f2", 
-//             height: "700px", 
-//           }}>
-//             <div className="col-sm-6" style={{paddingLeft: "84px"}} >
-                  // <h1 className="content-sub-headings">You don't get a developer</h1>
-                  // <p className="headings-sub-details">
-                  // Once on the Batch, you get access to one of our in-house tech teams. 
-                  // That’s a Project Manager (who's also a Scrum Master), a UI/UX Designer, 
-                  // a Lead Developer (Mobile or Web - according to your product), 
-                  // an Architect overseeing the project, and a back-end developer.
-                  // </p>
-//             </div>
-//             <div className="col-sm-6 align-items-right"  style={{alignContent: "center", textAlign: "center"}}>
-//                 <PragmaDeveloper />
-//             </div>
-//       </div>
-//   </div>
+export default  connect(mapStateToProps)(ByJoiningUS)

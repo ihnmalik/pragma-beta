@@ -23,7 +23,6 @@ const BlogPage = (props) => {
 
                 <article className="row mb-7">
                   <div className="col-sm-5 mb-5 mb-sm-0">
-                    {/* <img className="img-fluid w-100 rounded" src="//placehold.it/200" className="img-fluid" alt="" /> */}
                     <img className="img-fluid w-100 rounded" src="https://www.bloggersingapore.com/wp-content/uploads/2018/07/blog_post.jpg" className="img-fluid" alt="" />
                   </div>
 
@@ -37,7 +36,6 @@ const BlogPage = (props) => {
                         </h2>
                         <p className="blog-title">{node.excerpt}</p>
                       </div>
-                      {/* <small className="d-block text-secondary">by <a className="text-dark font-weight-bold" href="#">James Austin</a></small> */}
                     </div>
 
                   </div>
@@ -54,23 +52,6 @@ const BlogPage = (props) => {
   )
 }
 
-
-// <div className="card" style={{marginTop: "20px", border: "2px solid #f76268"}}>
-//           <div className="row no-gutters">
-//                 <div className="col-auto">
-//                     <img src="//placehold.it/200" className="img-fluid" alt="" />
-//                 </div>
-//                 <div className="col" style={{padding: "20px"}}>
-//                     <div className="card-block px-2">
-//                         <h4 className="card-title">{node.frontmatter.title}</h4>
-//                         {/* <p className="card-text" >{node.excerpt}</p> */}
-//                     </div>
-//                 </div>
-//             </div>
-//             <div className="card-footer w-100" style={{color:"white",background: "#f76268"}}>
-//               {node.frontmatter.date}
-//             </div>
-//           </div>
 
 export default BlogPage
 

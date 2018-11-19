@@ -1,25 +1,25 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import HeaderImg from "./images/headerImg"
+// import React from 'react'
+// import { Link } from 'gatsby'
+// import HeaderImg from "./images/headerImg"
 
-import "../css/header.css"
+// import "../css/header.css"
 
-const Header = () => (
-  <div className="container-fluid " style={{height: "700px", backgroundColor: "#f9f7f2"}}>
-    <div className="row " style={{padding: "20px"}} >
-        <div className="col-sm-6 container" style={{ zIndex: "10000", margin: "0 auto"}}>
-          <h1 className="content-headings">Your Technical<br /> Co-Founder</h1>
-          <p className="headings-details">We help non-technical founders get started on their product.</p>
-          <button className="ApplyBtnHeader">Apply Now</button>
-        </div>
-        <div className="col-sm-6 container" >
-          <div style={{maxWidth: '300px', maxHeight: "50px"}}><HeaderImg /></div>
-        </div>
-    </div>
-  </div>
-)
+// const Header = () => (
+//   <div className="container-fluid " style={{height: "700px", backgroundColor: "#f9f7f2"}}>
+//     <div className="row " style={{padding: "20px"}} >
+//         <div className="col-sm-6 container" style={{ zIndex: "10000", margin: "0 auto"}}>
+//           <h1 className="content-headings">Your Technical<br /> Co-Founder</h1>
+//           <p className="headings-details">We help non-technical founders get started on their product.</p>
+//           <button className="ApplyBtnHeader">Apply Now</button>
+//         </div>
+//         <div className="col-sm-6 container" >
+//           <div style={{maxWidth: '300px', maxHeight: "50px"}}><HeaderImg /></div>
+//         </div>
+//     </div>
+//   </div>
+// )
 
-export default Header
+// export default Header
 
 // <div style={{paddingTop: "40px", paddingRight: "30px", paddingLeft: "30px"}}>
 // <div 

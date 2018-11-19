@@ -14,39 +14,43 @@ export default class BatchStartup extends React.Component {
 
         return (
             <div className="container-fluid main-startup-div" style={{textAlign: "center", alignContent:"center"}}>
+            
+                <div style={{textAlign: "center", padding: "20px"}}>
+                    <p className="join-us-text">Previous Batch Startups</p>
+                </div>
                 <div className="row">
                     <div className="col-sm-3"></div>
                     <div className="col-sm-6" >
 
                         <div className="card text-center startup-card" >
-                            <img class="card-img-top" src={QuickTixImg} alt="Card image cap"></img>
+                            <img className="card-img-top" src={QuickTixImg} alt="Card image cap"></img>
 
                            
                         </div>
 
                         <div className="card text-center startup-card ">
-                            <img class="card-img-top" src={CountupImg} alt="Card image cap"></img>
+                            <img className="card-img-top" src={CountupImg} alt="Card image cap"></img>
 
                             
                         </div>
 
                         <div className="card text-center startup-card" >
-                            <img class="card-img-top" src={FilzImg} alt="Card image cap"></img>
+                            <img className="card-img-top" src={FilzImg} alt="Card image cap"></img>
 
                           
                         </div>
 
                         <div className="card text-center startup-card">
-                            <img class="card-img-top" src={SealedImg} alt="Card image cap"></img>
+                            <img className="card-img-top" src={SealedImg} alt="Card image cap"></img>
 
                         </div>
 
                         <div className="card text-center startup-card">
-                            <img class="card-img-top" src={FinchImg} alt="Card image cap"></img>
+                            <img className="card-img-top" src={FinchImg} alt="Card image cap"></img>
                         </div>
 
                         <div className="card text-center startup-card">
-                            <img class="card-img-top" src={TrippleImg} alt="Card image cap"></img>
+                            <img className="card-img-top" src={TrippleImg} alt="Card image cap"></img>
                         </div>
                     </div>
                     <div className="col-sm-3"></div>

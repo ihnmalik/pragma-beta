@@ -1,9 +1,12 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import PragmaBuilding from "../../images/buildingSoftware"
+import {connect} from "react-redux"
 
+import EnglishLanguage from "../../../site content text/english"
+import ArabicLanguage from "../../../site content text/arabic"
 
-const BuildingSoftware = () => (
+const BuildingSoftware = (props) => (
 
     <div className="container-fluid">
     <div className="row main-header-div-2" >
@@ -14,50 +17,22 @@ const BuildingSoftware = () => (
             <h4
                 className="content-sub-headings"
             >
-                You are not building just software
+               {props.language.main6.title}
             </h4>
             <p className="headings-sub-details">
-                Neither are we. And that is exactly why we chose to work 
-                 exclusively with Startups. Keeping in sight the grand vision 
-                 of building a Tech company highly benefits the collaboration 
-                 and the product. Surely it comes with some pressure and many    
-                 caffeinated all-nighters, but we’re just as hooked as you are.
+            {props.language.main6.description}
               </p>
         </div>
 
     </div>
 </div>
 )
+const mapStateToProps = (state) => {
+    return {
+        language: state.language === 'English' ? EnglishLanguage : ArabicLanguage
+    }
+}
 
-export default BuildingSoftware
+export default connect(mapStateToProps)(BuildingSoftware)
 
 
-
-
-// <div className="container" style={{padding: "0px 30px"}}>
-// <div 
-//     className="row " 
-//     style={{ 
-//       backgroundColor: "white", 
-//       height: "700px", 
-//     }}>
-//       <div className="col-sm-6 container" style={{alignContent: "center", textAlign: "center"}} >
-//           <PragmaBuilding />
-//       </div>
-
-//       <div className="col-sm-6 container" style={{textAlign: "justify"}} >
-//           <h4 
-//               className="content-sub-headings"
-//           >
-//               You are not building just software
-//           </h4>
-//             <p className="headings-sub-details">
-//                 Neither are we. And that is exactly why we chose to work 
-//                 exclusively with Startups. Keeping in sight the grand vision 
-//                 of building a Tech company highly benefits the collaboration 
-//                 and the product. Surely it comes with some pressure and many    
-//                 caffeinated all-nighters, but we’re just as hooked as you are.
-//             </p>
-//       </div>
-// </div>
-// </div>
