@@ -8,7 +8,7 @@ import AboutUsSlider from "../components/aboutUsSlider"
 const AboutUsPage = () => (
   <Layout>
     <div className="Page-Contents container-fluid">
-        <div className="container" style={{textAlign: "center",backgroundColor: "#f9f7f2",padding: "70px", alignContent: "center"}}>
+        <div className="container about-page-container-div" >
             <h1 className="content-headings-2">
               We’re Hiring!
             </h1>
@@ -40,9 +40,6 @@ const AboutUsPage = () => (
             <br />
             <br />
             <br />
-          <h1 className="content-headings-2">Meet the Team</h1>
-
-            <AboutUsSlider  />
 
           <h1 className="content-headings-2">All Team Members</h1>
 

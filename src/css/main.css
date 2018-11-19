@@ -3,6 +3,16 @@
     padding-top: 120px;
 } */
 
+
+/* style={{textAlign: "center",backgroundColor: "#f9f7f2",padding: "70px", alignContent: "center"}} */
+
+.about-page-container-div {
+    text-align: center;
+    background-color: #f9f7f2;
+    padding: "60px";
+    align-content: center
+}
+
 .link {
     text-decoration: none;
 }
@@ -29,3 +39,21 @@ div.col-8 div {
     text-decoration: none
 }
 
+/* 
+@media (min-width: 600px) and (max-width: 1100px) {
+    .about-page-container-div {
+        text-align: center;
+        background-color: #f9f7f2;
+        padding: "40px";
+        align-content: center
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .about-page-container-div {
+        text-align: center;
+        background-color: #f9f7f2;
+        padding: "20px";
+        align-content: center
+    }
+} */
