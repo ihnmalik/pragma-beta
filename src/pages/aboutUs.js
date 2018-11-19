@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import "bootstrap/dist/css/bootstrap.min.css";
 import Layout from '../components/layout'
 import "../css/main.css"
+import AboutUsSlider from "../components/aboutUsSlider"
 
 const AboutUsPage = () => (
   <Layout>
@@ -39,32 +40,35 @@ const AboutUsPage = () => (
             <br />
             <br />
             <br />
-            <h1 className="content-headings-2">Meet the Team</h1>
+          <h1 className="content-headings-2">Meet the Team</h1>
 
-            <div className="row" >
-              <div className="col-sm-3" >
-                <img className="team-img" src="https://www.howtogeek.com/wp-content/uploads/2016/11/xfreddie.jpg.pagespeed.gp+jp+jw+pj+ws+js+rj+rp+rw+ri+cp+md.ic.X9S8A5J_bd.jpg" alt="programmer-img"/>
-                <h4>Stephan</h4>
-                <p>Technology Lead</p>
-              </div>
-              <div className="col-sm-3" >
-                <img className="team-img" src="https://www.howtogeek.com/wp-content/uploads/2016/12/650x433x5squinch.jpg.pagespeed.gp+jp+jw+pj+js+rj+rp+rw+ri+cp+md.ic.YMwUJfJSjj.jpg" alt="programmer-img"/>
-                <h4>Lewis</h4>
-                <p>Growth & Operations</p>
-              </div>
-              <div className="col-sm-3">
-                <img className="team-img" src="https://fast.clickbooq.com/0bea33-774/Reithofer-lg.jpg" alt="programmer-img"/>
-                <h4>Mark</h4>
-                <p>Full Stack Lead Developer</p>
-              </div>
-              <div className="col-sm-3">
-                <img className="team-img" src="http://www.scuk.cz/uploads/avatars/petr.s.jpg" alt="programmer-img"/>
+            <AboutUsSlider  />
 
-                <h4>John</h4>
-                <p>Backend Developer</p>
-              </div>
+          <h1 className="content-headings-2">All Team Members</h1>
+
+          <div className="row" >
+            <div className="col-sm-3" >
+              <img className="team-img" src="https://www.howtogeek.com/wp-content/uploads/2016/11/xfreddie.jpg.pagespeed.gp+jp+jw+pj+ws+js+rj+rp+rw+ri+cp+md.ic.X9S8A5J_bd.jpg" alt="programmer-img"/>
+              <h4>Stephan</h4>
+              <p>Technology Lead</p>
             </div>
+            <div className="col-sm-3" >
+              <img className="team-img" src="https://www.howtogeek.com/wp-content/uploads/2016/12/650x433x5squinch.jpg.pagespeed.gp+jp+jw+pj+js+rj+rp+rw+ri+cp+md.ic.YMwUJfJSjj.jpg" alt="programmer-img"/>
+              <h4>Lewis</h4>
+              <p>Growth & Operations</p>
+            </div>
+            <div className="col-sm-3">
+              <img className="team-img" src="https://fast.clickbooq.com/0bea33-774/Reithofer-lg.jpg" alt="programmer-img"/>
+              <h4>Mark</h4>
+              <p>Full Stack Lead Developer</p>
+            </div>
+            <div className="col-sm-3">
+              <img className="team-img" src="http://www.scuk.cz/uploads/avatars/petr.s.jpg" alt="programmer-img"/>
 
+              <h4>John</h4>
+              <p>Backend Developer</p>
+            </div>
+          </div>
         </div>
     </div>
     

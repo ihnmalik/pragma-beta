@@ -10,6 +10,8 @@ import BuildingSoftware from "../components/HomePageComponents/buildingSoftware/
 import StopFunding from "../components/HomePageComponents/stopFunding/stopFunding"
 import Footer from "../components/Footer/footer"
 import HeaderMain from "../components/HomePageComponents/header/header-main"
+import AboutUsSlider from "../components/aboutUsSlider"
+import BatchStarup from "../components/HomePageComponents/startups/batchStartups"
 
 import "../css/main.css"
 import "../css/header.css"
@@ -23,6 +25,14 @@ const IndexPage = () => (
           <p className="join-us-text">By Joining Us</p>
       </div>
       <ByJoiningUS />
+      <div style={{textAlign: "center", padding: "20px"}}>
+          <p className="join-us-text">Our Team</p>
+      </div>
+      <AboutUsSlider />
+      <div style={{textAlign: "center", padding: "20px"}}>
+          <p className="join-us-text">Previous Batch Startups</p>
+      </div>
+      <BatchStarup />
       <BuildingSoftware />
       <StopFunding />
       {/* <Footer /> */}
