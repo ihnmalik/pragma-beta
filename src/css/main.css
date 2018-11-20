@@ -4,7 +4,8 @@
 } */
 
 .card {
-    flex: none !important;
+    /* flex: none !important; */
+    display: flex;
 }
 
 .link {
