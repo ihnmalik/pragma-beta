@@ -8,15 +8,15 @@ import ArabicLanguage from "../../site content text/arabic"
 
 
 const AboutUsPageMain = (props) => (
-    <div className="Page-Contents container-fluid">
-    <div className="container "  style={{textAlign: "center",backgroundColor: "#f9f7f2",padding: "70px", alignContent: "center"}}>
-            <h1 className="content-headings-2">
+    <div className="container-fluid">
+    <div className="container"  style={{textAlign: "center",backgroundColor: "#f9f7f2",padding: "70px", alignContent: "center"}}>
+            <h1 className={`${props.languageName === 'English' ? 'content-headings-2' : 'content-headings-2-arabic'}`}>
               {props.language.aboutUs.title1}
             </h1>
 
             <br />
 
-            <span className="content-sub-headings">
+            <span className={`${props.languageName === 'English' ? 'content-sub-headings' : 'content-sub-headings-arabic'}`}>
               {props.language.aboutUs.description1}
             </span>
    
@@ -24,10 +24,10 @@ const AboutUsPageMain = (props) => (
             <br />
             <br />
             <br />
-            <h1 className="content-sub-headings">
+            <h1 className={`${props.languageName === 'English' ? 'content-sub-headings' : 'content-sub-headings-arabic'}`}>
              {props.language.aboutUs.title2}
             </h1>
-            <p className="headings-details">
+            <p className={`${props.languageName === 'English' ? 'headings-details ' : 'headings-details-arabic'}`}>
                 {props.language.aboutUs.description2}
             </p>
             <br />
@@ -35,7 +35,9 @@ const AboutUsPageMain = (props) => (
             <br />
             <br />
 
-          <h1 className="content-headings-2">{props.language.aboutUs.title3}</h1>
+          <h1 className={`${props.languageName === 'English' ? 'content-headings-2 ' : 'content-headings-2-arabic'}`}>
+            {props.language.aboutUs.title3}
+          </h1>
 
           <div className="row" >
             <div className="col-sm-3" >
@@ -66,7 +68,8 @@ const AboutUsPageMain = (props) => (
 
 const mapStateToProps = (state) => {
     return {
-        language: state.language === 'English' ? EnglishLanguage : ArabicLanguage
+        language: state.language === 'English' ? EnglishLanguage : ArabicLanguage,
+        languageName: state.language === 'English' ? 'English' : 'Arabic'
     }
 }
 

@@ -3,6 +3,14 @@
     src: url("fonts/futura/futura_light.otf") format("opentype");
 }
 
+.Humburger-Navbar {
+    display: none;
+}
+
+/* .navbar-bootstrap {
+    display: none;
+} */
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -60,6 +68,7 @@
 
 .openNavBtn {
     transition: all 0.3s ease;
+    display: block;
 }
 
 .openNavBtn:hover {
@@ -136,20 +145,36 @@
         font-family: FuturaLight;
         font-size: 10px;
         float: right;
-        margin-top: 5px;
-        padding: 0px 0px;
+        margin-top: 7px;
+        padding: 0px 5px;
         cursor: pointer;
         background: none;
         border: 1px solid #f76268;
         border-radius: 20px;
         transition: all 0.4s ease;
-        margin: 47px -92px !important;
         height: 28px !important;
         width: 77px !important;
 
     }
+
+    .Humburger-Navbar {
+        display: block;
+    }
+    
+    .navbar-bootstrap {
+        display: none;
+    }
 }
 
+@media (min-width: 600px) and (max-width: 1100px)  {
+    .Humburger-Navbar {
+        display: block;
+    }
+    
+    .navbar-bootstrap {
+        display: none;
+    }
+}
 
 /* 
 .ApplyBtnNavbar:hover {
@@ -161,3 +186,32 @@
     color: white;
     transform: translateX(-3px);
 } */
+
+
+/* CSS for Bootstrap Navbar */
+
+
+  
+  .navbar li {
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+  
+  .navbar .container .navbar-collapse > .navbar-nav > li a {
+    /* background-color: #ffff00; */
+    color: black;
+  }
+  
+  .navbar .container .navbar-collapse > .navbar-nav > li > a:hover,
+  .navbar .container .navbar-collapse > .navbar-nav > li > a:focus {
+    /* background-color: #ffff00; */
+    color: #f76268;
+  }
+
+
+ 
+  
+
+  
+
+  

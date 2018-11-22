@@ -8,9 +8,32 @@
     src:  url("fonts/futura/futura_light.otf") format("opentype");
 }
 
+@font-face {
+    font-family: TajawalBold;
+    src: url("fonts/tajawal/Tajawal-Bold.ttf") format("opentype");
+}
+
+
+@font-face {
+    font-family: TajawalLight;
+    src: url("fonts/tajawal/Tajawal-Light.ttf") format("opentype")
+}
+
 .join-us-text {
     font-family: FuturaBold;
     font-size: 50px;
+}
+
+.content-headings-arabic {
+    font-family: TajawalBold;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.content-headings-2-arabic {
+    font-family: TajawalBold;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 .content-headings {
@@ -26,10 +49,18 @@
     font-size: 30px;
 }
 
+
+
 .content-sub-headings {
     font-family: FuturaLight;
     font-weight: bold;
     font-size: 25px;
+}
+
+.content-sub-headings-arabic {
+    font-family: TajawalLight;
+    font-weight: bold;
+    font-size: 25px
 }
 
 .headings-details {
@@ -37,8 +68,20 @@
     font-size: 30px;
 }
 
+.headings-details-arabic {
+    font-family: TajawalLight;
+    font-size: 30px;
+    
+}
+
 .headings-sub-details {
     font-family: FuturaLight;
+    font-size: 18px;
+}
+
+
+.headings-sub-details-arabic {
+    font-family: TajawalLight;
     font-size: 18px;
 }
 
@@ -94,6 +137,12 @@
     height: 700px;
 }
 
+.main-header-div-arabic {
+    text-align: right;
+    background-color: #f9f7f2;
+    height: 700px;
+}
+
 .main-slider-div {
     background-color: #f9f7f2;
     height: 600px;
@@ -102,6 +151,12 @@
 .main-header-div-2 {
     background-color: white;
     height: 700px;
+}
+
+.main-header-div-2-arabic {
+    background-color: white;
+    height: 700px;
+    text-align: right;
 }
 
 /* .style={{textAlign: "center", alignContent: "center", padding: "30px"}} */
@@ -176,17 +231,35 @@
         font-weight: bold;
         font-size: 20px;
     }
-
     
+    .content-sub-headings-arabic {
+        font-family: TajawalLight;
+        font-weight: bold;
+        font-size: 20px
+    }
+    
+
     .headings-details {
         font-family: FuturaLight;
         font-size: 25px;
+    }
+
+    .headings-details-arabic {
+        font-family: TajawalLight;
+        font-size: 25px;
+        
     }
 
     .headings-sub-details {
         font-family: FuturaLight;
         font-size: 14px;
     }
+
+    .headings-sub-details-arabic {
+        font-family: TajawalLight;
+        font-size: 14px;
+    }
+    
 }
 
 /* style={{ position: "relative", top: "20%", maxWidth: '400px', maxHeight: "400px"}} */
@@ -222,10 +295,28 @@
         font-size: 35px;
     }
 
+    .content-headings-arabic {
+        font-family: TajawalBold;
+        font-weight: bold;
+        font-size: 35px;
+    }
+
+    .content-headings-2-arabic {
+        font-family: TajawalBold;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
     .content-sub-headings {
         font-family: FuturaLight;
         font-weight: bold;
         font-size: 20px;
+    }
+
+    .content-sub-headings-arabic {
+        font-family: TajawalLight;
+        font-weight: bold;
+        font-size: 20px
     }
     
     .headings-details {
@@ -233,8 +324,19 @@
         font-size: 25px;
     }
 
+    .headings-details-arabic {
+        font-family: TajawalLight;
+        font-size: 25px;
+        
+    }
+
     .headings-sub-details {
         font-family: FuturaLight;
+        font-size: 12px;
+    }
+
+    .headings-sub-details-arabic {
+        font-family: TajawalLight;
         font-size: 12px;
     }
 

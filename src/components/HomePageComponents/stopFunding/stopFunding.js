@@ -8,10 +8,10 @@ import ArabicLanguage from "../../../site content text/arabic"
 
 const StopFunding = (props) => (
   <div className="container-fluid">
-    <div className="row main-header-div" >
+    <div className={`row ${props.languageName === 'English' ? 'main-header-div' : 'main-header-div-arabic'}`} >
       <div className="col-sm-6 container" style={{ display: "flex", padding: "40px", alignContent: "center", justifyContent: "center", flexDirection: "column" }}>
-        <h1 className="content-sub-headings">{props.language.main7.title}</h1>
-        <p className="headings-sub-details">
+        <h1 className={`${props.languageName === 'English' ? 'content-sub-headings' : 'content-sub-headings-arabic'}`}>{props.language.main7.title}</h1>
+        <p className={`${props.languageName === 'English' ? 'heading-sub-details' : 'heading-sub-details-arabic'}`}>
             {props.language.main7.description}
         </p>
       </div>
@@ -24,7 +24,9 @@ const StopFunding = (props) => (
 
 const mapStateToProps = (state) => {
   return {
-      language: state.language === 'English' ? EnglishLanguage : ArabicLanguage
+      language: state.language === 'English' ? EnglishLanguage : ArabicLanguage,
+      languageName: state.language === 'English' ? 'English' : 'Arabic'
+
   }
 }
 

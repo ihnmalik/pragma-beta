@@ -9,12 +9,12 @@ import ArabicLanguage from "../../../site content text/arabic"
 const ByJoiningUS = (props) => (
   <div className="container-fluid">
         <div style={{textAlign: "center", padding: "20px"}}>
-            <p className="join-us-text">By Joining Us</p>
+            <p className="join-us-text">{props.language.main3.titleMain}</p>
         </div>
-    <div className="row main-header-div" >
+    <div className={`row ${props.languageName === 'English' ? 'main-header-div' : 'main-header-div-arabic'}`} >
       <div className="col-sm-6 container" style={{ display: "flex", padding: "40px", alignContent: "center", justifyContent: "center", flexDirection: "column" }}>
-        <h1 className="content-sub-headings"> {props.language.main3.subTitle}</h1>
-        <p className="headings-sub-details">
+        <h1 className={`${props.languageName === 'English' ? 'content-sub-headings' : 'content-sub-headings-arabic'}`}> {props.language.main3.subTitle}</h1>
+        <p className={`${props.languageName === 'English' ? 'heading-sub-details' : 'heading-sub-details-arabic'}`}>
          {props.language.main3.description}
         </p>
       </div>
@@ -23,14 +23,16 @@ const ByJoiningUS = (props) => (
       </div>
     </div>
       <div style={{textAlign: "center", padding: "20px"}}>
-            <p className="join-us-text">Our Team</p>
+            <p className="join-us-text">{props.language.main4.titleMain}</p>
         </div>
   </div>
 )
 
 const mapStateToProps = (state) => {
   return {
-      language: state.language === 'English' ? EnglishLanguage : ArabicLanguage
+      language: state.language === 'English' ? EnglishLanguage : ArabicLanguage,
+      languageName: state.language === 'English' ? 'English' : 'Arabic'
+
   }
 }
 

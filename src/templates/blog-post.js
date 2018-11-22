@@ -8,32 +8,15 @@ function BlogPost(props) {
     const { title } = post.frontmatter;
     return (
         <Layout>
-            <div className="row">
-            <div className="col-lg-8">
+            <div className="row container">
+            <div className="col-lg-10" style={{margin: "0 auto"}}>
                 <h1 className="mt-4">{title}</h1>
                 <hr />
                 <img className="img-fluid rounded" src="http://placehold.it/900x300" alt="" />
                 <hr />
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
             </div>
-            <div class="col-lg-4">
-                <div className="card my-3">
-                    <h5 class="card-header">Advertisement</h5>
-                    <div class="card-body">
-                        <span class="input-group-btn">
-                            <button class="btn btn-secondary" type="button">Go!</button>
-                        </span>
-                    </div>
-                </div>
-                <div className="card my-3">
-                    <h5 class="card-header">Advertisement</h5>
-                    <div class="card-body">
-                        <span class="input-group-btn">
-                            <button class="btn btn-secondary" type="button">Go!</button>
-                        </span>
-                    </div>
-                </div>
-            </div>
+            
             </div>
         </Layout>
     )
