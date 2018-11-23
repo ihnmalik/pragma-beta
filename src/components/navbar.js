@@ -48,13 +48,13 @@ class Navbar extends React.Component {
         />
 
         <div className="navbar-bootstrap">
-          <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-            <div class="container container-nav mt-4" >
-              <Link class="navbar-brand text-light" to="/">
+          <nav className="navbar navbar-expand-lg navbar-light bg-transparent">
+            <div className="container container-nav mt-4" >
+              <Link className="navbar-brand text-light" to="/">
                 <img src={SiteLogo} />
               </Link>
               <button
-                class="navbar-toggler navbar-dark"
+                className="navbar-toggler navbar-dark"
                 type="button"
                 data-toggle="collapse"
                 data-target="#navbarTogglerDemo02"
@@ -62,29 +62,29 @@ class Navbar extends React.Component {
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span class="navbar-toggler-icon" />
+                <span className="navbar-toggler-icon" />
               </button>
 
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav navbar-right ml-auto mt-2 mt-lg-0">
-                  <li class="nav-item">
-                    <Link className="nav-link" to="/whyApply/">
+              <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul className="navbar-nav navbar-right ml-auto mt-2 mt-lg-0">
+                  <li className="nav-item">
+                    <Link className="nav-link nav-link-font" to="/whyApply/">
                       {this.props.language.navbar.whyApply}
                     </Link>
                   </li>
-                  <li class="nav-item">
-                    <Link className="nav-link" to="/blogPage/">
+                  <li className="nav-item">
+                    <Link className="nav-link nav-link-font" to="/blogPage/">
                       {this.props.language.navbar.blog}
                     </Link>
                   </li>
-                  <li class="nav-item">
-                    <Link className="nav-link" to="/aboutUs/">
+                  <li className="nav-item">
+                    <Link className="nav-link nav-link-font" to="/aboutUs/">
                       {this.props.language.navbar.about}
                     </Link>
                   </li>
                  
-                  <li class="nav-item">
-                    <button className="btn btn-outline-danger my-2 my-sm-0">
+                  <li className="nav-item">
+                    <button className="btn btn-outline-danger my-2 my-sm-0" style={{borderRadius: "20px"}}>
                       Apply Now
                     </button>
                   </li>
@@ -169,20 +169,7 @@ class Navbar extends React.Component {
             &#9776;
           </span>
 
-          
-
-
-          {/* <select
-                className="btn btn-outline-danger slectLangBtnNavbar"
-                value={this.props.languageName}
-                style={{ float: 'right', width: '120px' }}
-                onChange={e => {
-                  this.props.dispatch(changeLanguage(e.target.value))
-                }}
-              >
-                <option value="English">English</option>
-                <option value="Arabic">Arabic</option>
-          </select> */}
+        
 
           <select
             className="slectLangBtnNavbar"

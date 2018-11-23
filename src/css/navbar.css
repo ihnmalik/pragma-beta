@@ -11,6 +11,11 @@
     display: none;
 } */
 
+
+.nav-link-font {
+    font-family: FuturaLight;
+}
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -166,7 +171,7 @@
     }
 }
 
-@media (min-width: 600px) and (max-width: 1100px)  {
+@media (min-width: 600px) and (max-width: 1000px)  {
     .Humburger-Navbar {
         display: block;
     }

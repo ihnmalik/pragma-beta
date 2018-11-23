@@ -27,7 +27,7 @@
 .content-headings-arabic {
     font-family: TajawalBold;
     font-weight: bold;
-    font-size: 70px;
+    font-size: 60px;
 }
 
 .content-headings-2-arabic {
@@ -124,6 +124,14 @@
     left: 5%
 }
 
+.img-class-2 {
+    max-width: 400px;
+    max-height: 400px;
+    position: relative; 
+    top: 20%;
+    left: 5%
+}
+
 .team-img {
     margin-top: 50px;
     width: 130px;
@@ -206,6 +214,15 @@
         top: 20%;
         left: 5%
     }
+
+    .img-class-2 {
+        max-width: 250px;
+        max-height: 250px;
+        position: relative; 
+        top: 20%;
+        left: 5%
+    }
+
     .team-img {
         margin-top: 50px;
         width: 70px;
@@ -360,6 +377,15 @@
         top: 0%;
         left: 0%
     }
+
+    .img-class-2 {
+        max-width: 250px;
+        max-height: 250px;
+        position: relative; 
+        top: 0%;
+        left: 2%
+    }
+
     .main-header-div {
         background-color: #f9f7f2;
         height: 750px;

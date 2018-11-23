@@ -2,3 +2,13 @@
     padding: 60px;
     background-color: #f76268;
 }
+
+.social-links {
+    color: black;
+    transition: all 0.2s
+}
+
+.social-links:hover {
+    color: white;
+    text-decoration: none;
+}

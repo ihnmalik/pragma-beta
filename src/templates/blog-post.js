@@ -8,7 +8,7 @@ function BlogPost(props) {
     const { title } = post.frontmatter;
     return (
         <Layout>
-            <div className="row container">
+            <div className="row container" >
             <div className="col-lg-10" style={{margin: "0 auto"}}>
                 <h1 className="mt-4">{title}</h1>
                 <hr />
