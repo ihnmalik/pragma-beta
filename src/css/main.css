@@ -3,10 +3,9 @@
     padding-top: 120px;
 } */
 
-.card {
-    /* flex: none !important; */
-    display: flex;
-}
+/* .card {
+    display: flex;  
+} */
 
 .link {
     text-decoration: none;

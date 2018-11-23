@@ -99,7 +99,7 @@ class Navbar extends React.Component {
                       }}
                     >
                       <option value="English">English</option>
-                      <option value="Arabic">Arabic</option>
+                      <option value="Arabic">عربى</option>
                     </select>
                   </li>
                 </ul>
@@ -179,7 +179,7 @@ class Navbar extends React.Component {
             }}
           >
             <option value="English">English</option>
-            <option value="Arabic">Arabic</option>
+            <option value="Arabic">عربى</option>
           </select>
 
         </div>
